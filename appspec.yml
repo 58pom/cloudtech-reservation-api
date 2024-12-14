@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-          ContainerName: "code-nginx-contaier-name"
+          ContainerName: "api-ecs"
           ContainerPort: "80"
