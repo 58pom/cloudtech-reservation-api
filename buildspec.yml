@@ -19,11 +19,7 @@ phases:
     commands:
       - docker tag ${ECR_REPO_NAME}:latest ${ECR_IMAGE_URI}
       - docker push ${ECR_IMAGE_URI}
-<<<<<<< HEAD
-
-=======
->>>>>>> 1483b2644c08a894869b8d2a86e7299cad47019b
-      - printf '[{"name":"code-nginx-contaier-name","imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
+      - printf '[{"name":"api-ecs","imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
 
 artifacts:
   files:
